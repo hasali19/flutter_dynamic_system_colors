@@ -32,6 +32,11 @@ jobs:
           cache: true
           cache-key: "flutter-:os:-:channel:-:version:-:arch:-:hash:"
 
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
       - name: Get packages
         run: flutter pub get
 
@@ -50,9 +55,12 @@ jobs:
         run: flutter build windows --debug
 
       - name: Build example (linux)
-        if: ${{ matrix.os == 'linux' }}
+        if: ${{ matrix.os == 'ubuntu' }}
         working-directory: example
-        run: flutter build linux --debug
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ninja-build
+          flutter build linux --debug
 
       - name: Build example (macos)
         if: ${{ matrix.os == 'macos' }}
