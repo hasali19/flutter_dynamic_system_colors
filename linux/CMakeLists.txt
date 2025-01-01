@@ -4,12 +4,12 @@
 cmake_minimum_required(VERSION 3.10)
 
 # Project-level configuration.
-set(PROJECT_NAME "dynamic_color")
+set(PROJECT_NAME "dynamic_system_colors")
 project(${PROJECT_NAME} LANGUAGES CXX)
 
 # This value is used when generating builds using this plugin, so it must
 # not be changed.
-set(PLUGIN_NAME "dynamic_color_plugin")
+set(PLUGIN_NAME "dynamic_system_colors_plugin")
 
 # Define the plugin library target. Its name must not be changed (see comment
 # on PLUGIN_NAME above).
@@ -41,7 +41,7 @@ target_link_libraries(${PLUGIN_NAME} PRIVATE PkgConfig::GTK)
 # List of absolute paths to libraries that should be bundled with the plugin.
 # This list could contain prebuilt libraries, or libraries created by an
 # external build triggered from this build file.
-set(dynamic_color_bundled_libraries
+set(dynamic_system_colors_bundled_libraries
   ""
   PARENT_SCOPE
 )

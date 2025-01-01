@@ -30,7 +30,7 @@ extension ColorSchemeHarmonization on ColorScheme {
   ///
   /// Subclasses of [ColorScheme] that add custom colors should re-implement
   /// [harmonized]. For example:
-  /// import 'package:dynamic_color/dynamic_color.dart';
+  /// import 'package:dynamic_system_colors/dynamic_system_colors.dart';
   ///
   /// class CustomColorScheme extends ColorScheme {
   ///   const CustomColorScheme(this.customYellow) : super(...);

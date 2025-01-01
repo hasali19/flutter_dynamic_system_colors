@@ -5,12 +5,12 @@
 cmake_minimum_required(VERSION 3.14)
 
 # Project-level configuration.
-set(PROJECT_NAME "dynamic_color")
+set(PROJECT_NAME "dynamic_system_colors")
 project(${PROJECT_NAME} LANGUAGES CXX)
 
 # This value is used when generating builds using this plugin, so it must
 # not be changed
-set(PLUGIN_NAME "dynamic_color_plugin")
+set(PLUGIN_NAME "dynamic_system_colors_plugin")
 
 # Any new source files that you add to the plugin should be added here.
 list(APPEND PLUGIN_SOURCES
@@ -21,7 +21,7 @@ list(APPEND PLUGIN_SOURCES
 # Define the plugin library target. Its name must not be changed (see comment
 # on PLUGIN_NAME above).
 add_library(${PLUGIN_NAME} SHARED
-  "include/dynamic_color/dynamic_color_plugin_c_api.h"
+  "include/dynamic_system_colors/dynamic_color_plugin_c_api.h"
   "dynamic_color_plugin_c_api.cpp"
   ${PLUGIN_SOURCES}
 )
@@ -47,7 +47,7 @@ target_link_libraries(${PLUGIN_NAME} PRIVATE flutter flutter_wrapper_plugin dwma
 # List of absolute paths to libraries that should be bundled with the plugin.
 # This list could contain prebuilt libraries, or libraries created by an
 # external build triggered from this build file.
-set(dynamic_color_bundled_libraries
+set(dynamic_system_colors_bundled_libraries
   ""
   PARENT_SCOPE
 )

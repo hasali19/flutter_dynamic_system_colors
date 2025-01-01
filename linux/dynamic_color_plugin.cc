@@ -1,4 +1,4 @@
-#include "include/dynamic_color/dynamic_color_plugin.h"
+#include "include/dynamic_system_colors/dynamic_color_plugin.h"
 
 #include <flutter_linux/flutter_linux.h>
 #include <gtk/gtk.h>

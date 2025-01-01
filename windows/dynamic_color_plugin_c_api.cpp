@@ -1,4 +1,4 @@
-#include "include/dynamic_color/dynamic_color_plugin_c_api.h"
+#include "include/dynamic_system_colors/dynamic_color_plugin_c_api.h"
 
 #include <flutter/plugin_registrar_windows.h>
 

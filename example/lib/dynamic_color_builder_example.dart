@@ -1,5 +1,5 @@
-import 'package:dynamic_color/dynamic_color.dart';
-import 'package:dynamic_color_example/common.dart';
+import 'package:dynamic_system_colors/dynamic_system_colors.dart';
+import 'package:dynamic_system_colors_example/common.dart';
 import 'package:flutter/material.dart';
 
 class AdvancedExample1 extends StatelessWidget {

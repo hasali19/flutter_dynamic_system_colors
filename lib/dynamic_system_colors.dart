@@ -1,4 +1,4 @@
-library dynamic_color;
+library dynamic_system_colors;
 
 export 'src/corepalette_to_colorscheme.dart';
 export 'src/dynamic_color_builder.dart';

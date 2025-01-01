@@ -1,6 +1,6 @@
-import 'package:dynamic_color/dynamic_color.dart';
-import 'package:dynamic_color/samples.dart';
-import 'package:dynamic_color/test_utils.dart';
+import 'package:dynamic_system_colors/dynamic_system_colors.dart';
+import 'package:dynamic_system_colors/samples.dart';
+import 'package:dynamic_system_colors/test_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

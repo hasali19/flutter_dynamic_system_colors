@@ -5,7 +5,7 @@
 import FlutterMacOS
 import Foundation
 
-import dynamic_color
+import dynamic_system_colors
 
 func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
   DynamicColorPlugin.register(with: registry.registrar(forPlugin: "DynamicColorPlugin"))
