@@ -1,5 +1,7 @@
 # dynamic_system_colors
 
+> This package was forked from https://github.com/material-foundation/flutter-packages/tree/main/packages/dynamic_color which appears to be unmaintained.
+
 [![pub package](https://img.shields.io/pub/v/dynamic_system_colors.svg)](https://pub.dev/packages/dynamic_system_colors)
 
 A Flutter package to create Material color schemes based on a platform's implementation of dynamic color. Currently supported platforms are:
