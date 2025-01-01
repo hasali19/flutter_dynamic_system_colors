@@ -14,11 +14,12 @@ permissions:
 
 jobs:
   check_package:
-    name: Using Flutter ${{ matrix.flutter-channel }}
-    runs-on: ubuntu-latest
+    name: Using Flutter ${{ matrix.flutter-channel }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}-latest
     strategy:
       fail-fast: false
       matrix:
+        os: [windows, macos, ubuntu]
         flutter-channel: [stable, beta]
     steps:
       - name: Checkout code
@@ -42,3 +43,30 @@ jobs:
 
       - name: Run Flutter unit tests
         run: flutter test
+
+      - name: Build example (windows)
+        if: ${{ matrix.os == 'windows' }}
+        working-directory: example
+        run: flutter build windows --debug
+
+      - name: Build example (linux)
+        if: ${{ matrix.os == 'linux' }}
+        working-directory: example
+        run: flutter build linux --debug
+
+      - name: Build example (macos)
+        if: ${{ matrix.os == 'macos' }}
+        working-directory: example
+        run: flutter build macos --debug
+
+      - name: Build example (android)
+        working-directory: example
+        run: flutter build apk --debug
+
+      - name: Build example (ios)
+        working-directory: example
+        run: flutter build ipa --debug
+
+      - name: Build example (web)
+        working-directory: example
+        run: flutter build web --debug
