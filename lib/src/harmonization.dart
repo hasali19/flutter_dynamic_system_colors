@@ -1,10 +1,11 @@
+import 'package:dynamic_system_colors/src/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:material_color_utilities/material_color_utilities.dart';
 
 /// Shifts color [from] towards color [to].
 Color _harmonizeColor(Color from, Color to) {
   if (from == to) return from;
-  return Color(Blend.harmonize(from.value, to.value));
+  return Color(Blend.harmonize(from.bits, to.bits));
 }
 
 extension ColorHarmonization on Color {
