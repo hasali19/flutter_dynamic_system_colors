@@ -1,4 +1,4 @@
-## Unreleased
+## 1.8.0 - 2025-01-01
 ### Changed
 - Update `material_color_utilities` to `0.11.1`
 - Update other dependencies

@@ -1,6 +1,6 @@
 name: dynamic_system_colors
 description: A Flutter package to create Material color schemes based on a platform's implementation of dynamic color.
-version: 1.7.0
+version: 1.8.0
 repository: https://github.com/hasali19/flutter_dynamic_system_colors
 issue_tracker: https://github.com/hasali19/flutter_dynamic_system_colors/issues
 screenshots:
