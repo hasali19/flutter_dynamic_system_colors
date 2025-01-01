@@ -59,7 +59,8 @@ jobs:
         working-directory: example
         run: |
           sudo apt-get update
-          sudo apt-get install -y ninja-build
+          sudo apt-get install -y curl git unzip xz-utils zip libglu1-mesa
+          sudo apt-get install -y clang cmake git ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev
           flutter build linux --debug
 
       - name: Build example (macos)
@@ -72,9 +73,10 @@ jobs:
         run: flutter build apk --debug
 
       - name: Build example (ios)
+        if: ${{ matrix.os == 'macos' }}
         working-directory: example
-        run: flutter build ipa --debug
+        run: flutter build ios --no-codesign --simulator --debug
 
       - name: Build example (web)
         working-directory: example
-        run: flutter build web --debug
+        run: flutter build web

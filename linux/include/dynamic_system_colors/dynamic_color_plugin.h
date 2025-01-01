@@ -11,14 +11,14 @@ G_BEGIN_DECLS
 #define FLUTTER_PLUGIN_EXPORT
 #endif
 
-typedef struct _DynamicSystemColorsPlugin DynamicSystemColorsPlugin;
+typedef struct _DynamicColorPlugin DynamicColorPlugin;
 typedef struct {
   GObjectClass parent_class;
-} DynamicSystemColorsPluginClass;
+} DynamicColorPluginClass;
 
 FLUTTER_PLUGIN_EXPORT GType dynamic_system_colors_plugin_get_type();
 
-FLUTTER_PLUGIN_EXPORT void dynamic_system_colors_plugin_register_with_registrar(
+FLUTTER_PLUGIN_EXPORT void dynamic_color_plugin_register_with_registrar(
     FlPluginRegistrar* registrar);
 
 G_END_DECLS
