@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'dynamic_color'
+  s.name             = 'dynamic_system_colors'
   s.authors          = 'Material Flutter team + Ebrahim Byagowi'
   s.license          = 'BSD-3-Clause'
   s.homepage         = 'https://github.com/material-foundation/flutter-packages/tree/main/packages/dynamic_color'
