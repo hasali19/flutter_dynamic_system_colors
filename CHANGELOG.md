@@ -1,3 +1,7 @@
+## 1.9.0 - 2026-04-03
+### Changed
+- Update `material_color_utilities` to `0.13.0`
+
 ## 1.8.0 - 2025-01-01
 ### Changed
 - Update `material_color_utilities` to `0.11.1`
