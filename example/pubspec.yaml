@@ -31,6 +31,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   material_color_utilities: any
 
+  material_ui: ^1.10.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -1,3 +1,8 @@
+## 2.0.0 - 2026-11-04
+### Changed
+- Migrate to the standalone `material_ui` package and drop all imports of `package:flutter/material`
+- Correct a link in readme to point to the material_ui package docs
+
 ## 1.9.0 - 2026-04-03
 ### Changed
 - Update `material_color_utilities` to `0.13.0`
