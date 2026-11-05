@@ -1,7 +1,7 @@
 import 'package:dynamic_system_colors/dynamic_system_colors.dart';
 import 'package:dynamic_system_colors/samples.dart';
 import 'package:dynamic_system_colors/test_utils.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

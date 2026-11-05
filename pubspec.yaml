@@ -20,6 +20,9 @@ dependencies:
     sdk: flutter
   flutter_test:
     sdk: flutter
+
+  material_ui: ^1.10.0
+
   # Since this package is an SDK dependency, we need to support a range of versions.
   # See https://github.com/flutter/flutter/blob/main/packages/flutter/pubspec.yaml for current version used by the SDK.
   material_color_utilities: ">=0.2.0 <= 0.13.0"
